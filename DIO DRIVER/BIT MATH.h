@@ -6,15 +6,13 @@
  */ 
 
 
-#ifndef BIT MATH_H_
-#define BIT MATH_H_
+#ifndef BIT_MATH_H_
+#define BIT_MATH_H_
 # define sitpin(reg,pin)  (reg|=(1<<pin))
 # define clearpin(reg,pin)  (reg&=~(1<<pin))
 # define togglepin(reg,pin)  (reg^=(1<<pin))
 # define gitpin(reg,pin)  ((reg>>pin)&1)
 
-# define sitport(reg)  (reg=1)
-# define clearport(reg)  (reg=0)
 
 
 
